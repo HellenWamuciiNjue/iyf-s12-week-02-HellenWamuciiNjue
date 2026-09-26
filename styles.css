@@ -124,3 +124,64 @@ p {
     border: 2px solid #fab005;    /* Wraps a solid yellow frame around the reading paragraph. */
     padding: 10px;                /* Inner cushion space. */
 }
+
+/* ==================== TASK 4.1: FLEXBOX NAVIGATION BAR ==================== */
+
+/* 1. Styling the main navbar container box */
+.nav-container {
+    display: flex;                /* 🌟 MAGIC COMMAND: Turns this box into a Flex container, lining items up side-by-side! */
+    justify-content: space-between; /* Pushes the logo to the far left and links to the far right with equal space. */
+    align-items: center;          /* Centers our items perfectly straight vertically inside the navbar height. */
+    background-color: #222222;    /* Gives our menu bar a sleek dark charcoal background color strip. */
+    padding: 15px 25px;           /* Adds 15px cushion space at the top/bottom and 25px on the left/right edges. */
+    margin-bottom: 30px;          /* Grabs a clean 30px air gap below the menu bar before main headings begin. */
+    border-radius: 6px;           /* Gives the menu tray soft, slightly rounded corner edges. */
+}
+
+/* 2. Styling our logo branding text */
+.logo {
+    color: #ffffff;               /* Sets the branding text to a crisp solid white. */
+    font-weight: 700;             /* Makes the logo lettering bold. */
+    font-size: 1.25rem;           /* Sets font scale height to 20px. */
+}
+
+/* 3. Styling the link collection row wrapper */
+.nav-links {
+    display: flex;                /* Flexes the link collection box so the bullets align horizontally too! */
+    list-style: none;             /* Removes the ugly default black dot bullet circles from our list items. */
+}
+
+/* 4. Adding a side-gap to our individual text menu links */
+.nav-links li {
+    margin-left: 20px;            /* Adds a clean 20px air gap to the left of each link so they don't crash into each other. */
+}
+
+/* 5. Styling the actual clickable navigation link anchor words */
+.nav-links a {
+    color: #ffffff;               /* Sets the link text words to solid white. */
+    text-decoration: none;        /* Removes the default underline style from our text links. */
+    font-weight: 500;             /* Clean medium weighting text. */
+}
+
+/* ==================== TASK 4.2: RESPONSIVE MEDIA QUERIES ==================== */
+
+/* This query kicks in ONLY when the visitor's screen is 600px wide or smaller (like a mobile phone) */
+@media (max-width: 600px) {
+    
+    /* 1. Stack the navigation items vertically on phones so they don't squash */
+    .nav-container {
+        flex-direction: column;   /* Switches the main layout flow from a horizontal row to a vertical column brick. */
+        gap: 15px;                /* Adds a 15px breathing space between the logo and the link clusters on mobile. */
+    }
+
+    /* 2. Clear out the side spacing gaps and align links to the center */
+    .nav-links li {
+        margin-left: 0;           /* Wipes out the left margin since the links don't sit side-by-side anymore. */
+        margin: 0 10px;           /* Gives beautiful horizontal breathing room between the stacked inline items. */
+    }
+
+    /* 3. Scale down your main headlines so they don't look huge on small screens */
+    h1 {
+        font-size: 1.75rem;       /* Reduces the giant title text size down slightly to fit a phone viewport width nicely. */
+    }
+}
