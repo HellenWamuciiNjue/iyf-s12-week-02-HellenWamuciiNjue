@@ -1,0 +1,53 @@
+/* ==================== RULE 1: THE UNIVERSAL RESET ==================== */
+/* The '*' symbol is a magic wand that targets every single tag on the page all at once! */
+* {
+    margin: 0;              /* Strips away all random default outer spacing around elements. */
+    padding: 0;             /* Strips away all random default inner padding inside elements. */
+    box-sizing: border-box; /* Crucial anchor! Tells the box to include padding and borders inside its total width. */
+}
+
+/* 🌟 REMEMBER: Leave a blank line between rules to let your eyes rest! */
+
+/* ==================== RULE 2: THE MAIN DOCUMENT BODY ==================== */
+/* This targets the <body> container to set global default layouts for the whole screen. */
+body {
+    font-family: "Georgia", serif; /* Changes text to a classic, clear reading style with little feet. */
+    font-size: 16px;              /* Sets the standard size for all normal paragraph reading text. */
+    line-height: 1.6;             /* Adds a comfortable breathing gap between text lines so it is easy to read. */
+    color: #333333;               /* Sets the text to soft charcoal grey instead of harsh solid black. */
+    background-color: #ec8f6d34;  /* Changes background from blinding white to a soft, custom warm tone. */
+    padding: 20px;                /* Creates a beautiful cushion space inside all four outer screen glass edges. */
+}
+
+/* ==================== RULE 3: HEADING SCALE DISTINCTIONS ==================== */
+
+/* Sizing for your giant main headline title. Use only ONE <h1> per webpage! */
+h1 {
+    font-size: 2.25rem;    /* Sets the height to 36px (2.25 times larger than our base body font). */
+    font-weight: 700;       /* Makes the letters thick and bold so they pop out. */
+    margin-bottom: 15px;    /* Pushes content directly below it down to leave a 15px air gap. */
+    color: #111111;         /* Deep dark tint for maximum emphasis. */
+}
+
+/* Sizing for medium-sized secondary subtitles. */
+h2 {
+    font-size: 1.875rem;   /* Sets the height to 30px (1.875 times larger than our base body font). */
+    font-weight: 600;       /* Semi-bold weighting for neat emphasis. */
+    margin-top: 25px;       /* Grabs a 25px air gap ABOVE itself to separate from prior blocks. */
+    margin-bottom: 12px;    /* Pushes items below it down by 12px. */
+    color: #222222;         /* Solid charcoal text color. */
+}
+
+/* Sizing for smaller subheadings inside chapters. */
+h3 {
+    font-size: 1.5rem;     /* Sets the height to 24px (1.5 times larger than our base body font). */
+    font-weight: 500;       /* Clean medium thickness text style. */
+    margin-top: 20px;       /* Grabs a 20px air gap ABOVE itself. */
+    margin-bottom: 10px;    /* Pushes items below it down by 10px. */
+    color: #444444;         /* Soft grey-toned emphasis. */
+}
+
+/* Layout spacing rules for standard paragraph reading sentences. */
+p {
+    margin-bottom: 15px;    /* Pushes the next sentence block down by 15px so paragraphs stay separate. */
+}
