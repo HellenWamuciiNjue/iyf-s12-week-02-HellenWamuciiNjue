@@ -185,3 +185,52 @@ p {
         font-size: 1.75rem;       /* Reduces the giant title text size down slightly to fit a phone viewport width nicely. */
     }
 }
+
+/* ==================== THE 5 DAILY CSS CHALLENGES STYLES ==================== */
+
+/* Challenge 1: Button Baseline Style & Interactive Hover Transitions */
+.hover-btn {
+    background-color: #3b5bdb;    /* Primary professional blue button background color. */
+    color: #ffffff;               /* Clean white text. */
+    border: none;                 /* Removes the ugly default browser button border. */
+    padding: 10px 20px;           /* Adds cushion spacing inside the button edges. */
+    font-size: 1rem;              /* Baseline font text size scale. */
+    border-radius: 4px;           /* Gives the button soft corners. */
+    cursor: pointer;              /* Turns the mouse cursor into a clicking hand icon! */
+    transition: background-color 0.3s ease; /* 🌟 Smooth 0.3-second transition effect! */
+}
+
+/* The pseudo-class rule that triggers ONLY when your mouse hovers over the button */
+.hover-btn:hover {
+    background-color: #2b45b2;    /* Darkens the blue color instantly when your cursor hovers on it. */
+}
+
+/* Challenge 2: Margin vs Padding Spacing Card */
+.spacing-card {
+    background-color: #e3fafc;    /* Soft cyan accent background tint. */
+    border: 1px solid #99e9f2;    /* Soft cyan boundary border layer. */
+    padding: 25px;                /* INTERNAL cushion space pushing the text inside inward. */
+    margin: 20px 0;               /* EXTERNAL air gap separating this module block from others. */
+}
+
+/* Challenge 3: Absolute vs Relative Sizing Units Boxes */
+.px-box {
+    width: 200px;                 /* FIXED absolute size: will stay exactly 200px wide no matter what. */
+    background-color: #ffe3e3;    /* Soft red background tone. */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.rem-box {
+    width: 12.5rem;               /* SCALABLE relative size (12.5 multiplied by our 16px body font = 200px). */
+    background-color: #d3f9d8;    /* Soft green background tone. */
+    padding: 10px;
+}
+
+/* Challenge 4: Stylized Borders Card Module */
+.border-card {
+    background-color: #fff4e6;    /* Soft warm orange background tint. */
+    border: 4px dashed #ff922b;   /* 🌟 Custom thick DASHED border style accent layout framing! */
+    padding: 15px;
+    border-radius: 12px;          /* Extra rounded corners for a neat card look. */
+}
