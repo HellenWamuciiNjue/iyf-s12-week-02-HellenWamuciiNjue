@@ -87,3 +87,40 @@ p {
     margin-top: 40px;             /* 🌟 Air gap ABOVE the box, forcing it away from Box 3! */
     margin-bottom: 40px;          /* Air gap BELOW the box. */
 }
+
+/* ==================== EXERCISE 2: INLINE VS BLOCK STYLES ==================== */
+
+/* Styling our Block boxes to visualize full-width boundaries */
+.block-box {
+    background-color: #e5dbff;    /* Gives block elements a soft, custom light purple shade. */
+    border: 2px solid #7048e8;    /* Wraps a thin solid dark purple frame around it. */
+    padding: 10px;                /* Inner cushion space. */
+    margin-bottom: 8px;           /* Tiny air gap below each block element. */
+}
+
+/* Styling our Inline elements to visualize tight content wrapping boundaries */
+.inline-box {
+    background-color: #e3fafc;    /* Gives inline elements a soft, custom light cyan shade. */
+    border: 2px solid #0c8599;    /* Wraps a thin solid dark cyan frame tightly around the text content. */
+    padding: 6px;                 /* Tiny internal cushion. */
+}
+
+/* ==================== EXERCISE 3: SPACING QUIRKS ON INLINE ELEMENTS ==================== */
+
+/* Applying heavy padding and margins to our test inline box */
+.quirk-box {
+    background-color: #ffdeeb;    /* Gives our test box a soft light pink highlight shade. */
+    border: 2px solid #f06595;    /* Wraps a thin solid pink frame around it. */
+    
+    /* 🌟 THE QUIRK TRIGGER: Adding massive layout padding and margins! */
+    padding: 30px;                /* Adds heavy internal padding cushions. */
+    margin-top: 50px;             /* Trying to push items above it away by 50px. */
+    margin-bottom: 50px;          /* Trying to push items below it away by 50px. */
+}
+
+/* Styling our next paragraph text block to visualize overlaps clearly */
+.next-paragraph {
+    background-color: #fff3bf;    /* Gives the sentence text block a soft light yellow background layer. */
+    border: 2px solid #fab005;    /* Wraps a solid yellow frame around the reading paragraph. */
+    padding: 10px;                /* Inner cushion space. */
+}
