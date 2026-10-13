@@ -206,21 +206,19 @@ p {
 
 /* ==================== THE 5 DAILY CSS CHALLENGES STYLES ==================== */
 
-/* Challenge 1: Button Baseline Style & Interactive Hover Transitions */
 .hover-btn {
-    background-color: #3b5bdb;    /* Primary professional blue button background color. */
-    color: #ffffff;               /* Clean white text. */
-    border: none;                 /* Removes the ugly default browser button border. */
-    padding: 10px 20px;           /* Adds cushion spacing inside the button edges. */
-    font-size: 1rem;              /* Baseline font text size scale. */
-    border-radius: 4px;           /* Gives the button soft corners. */
-    cursor: pointer;              /* Turns the mouse cursor into a clicking hand icon! */
-    transition: background-color 0.3s ease; /* 🌟 Smooth 0.3-second transition effect! */
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/* The pseudo-class rule that triggers ONLY when your mouse hovers over the button */
+/* This is what makes the button interactive on mouseover */
 .hover-btn:hover {
-    background-color: #2b45b2;    /* Darkens the blue color instantly when your cursor hovers on it. */
+    background-color: var(--accent-color, #0056b3);
 }
 
 /* Challenge 2: Margin vs Padding Spacing Card */
@@ -283,4 +281,49 @@ p {
     .projects-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+/* ==================== VISUAL NESTED BOX MODEL DIAGRAM ==================== */
+.nested-margin-box {
+    background-color: #ffdeeb;
+    border: 3px dashed #f06595;
+    padding: 25px;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #a61e4d;
+}
+
+.nested-border-box {
+    background-color: #fff3bf;
+    border: 5px solid #fab005;
+    padding: 25px;
+    margin-top: 15px;
+    color: #e67700;
+}
+
+.nested-padding-box {
+    background-color: #d3f9d8;
+    border: 2px solid #40c057;
+    padding: 25px;
+    margin-top: 15px;
+    color: #2b8a3e;
+}
+
+.nested-content-box {
+    background-color: #e3fafc;
+    border: 2px solid #0c8599;
+    padding: 20px;
+    margin-top: 15px;
+    text-align: center;
+    color: #0b7285;
+    font-weight: normal;
+}
+
+/* ==================== visual nested box model demonstration ==================== */
+.box-label {
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }

@@ -1,22 +1,22 @@
-<!DOCTYPE html> <!-- This tells my browser: Hey, get ready! I am writing a modern HTML5 webpage. -->
+<!DOCTYPE html>
+<!-- This tells my browser: Hey, get ready! I am writing a modern HTML5 webpage. -->
 <html lang="en"> <!-- This tells the computer that everything on this page is written in English. -->
-<head> <!-- This opens up my invisible settings drawer. -->
-    
-    <meta charset="UTF-8"> 
+<head>
+    <meta charset="UTF-8">
     <!-- REMEMBER: The line above is a safety rule. It ensures special characters like emojis don't turn into broken squares! -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 📱 Crucial: Tells mobile browsers to scale the layout to fit mobile screens perfectly! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- 📱 Crucial: Tells mobile browsers to scale the layout to fit mobile screens perfectly! -->
 
-    <title>Hellen Wamucii Njue | Week 2 CSS</title> <!-- This is the text that appears on my browser's top tab. -->
+    <title>Hellen Wamucii Njue | Week 2 CSS Portfolio</title>
+    <!-- This is the text that appears on my browser's top tab. -->
 
     <link rel="stylesheet" href="styles.css">
-    
-    <!-- 🌟 MAGIC LINK: Connects my HTML to my empty styles.css sheet so my colors and fonts render cleanly! -->
-
-</head> <!-- This puts a slash / on the tag to cleanly close our settings drawer. -->
-<body> <!-- This kicks off the visible part of my web page where content actually shows up! -->
+    <!-- 🌟 MAGIC LINK: Connects my HTML to my styles.css sheet so my colors and fonts render cleanly! -->
+</head>
+<body>
 
     <!-- ==================== LAYER 2: THE HEADER ==================== -->
-    <header> 
+    <header>
         <!-- Task 4.1: Flexbox Navigation Menu Element Tray -->
         <nav class="nav-container">
             <div class="logo">Hellen.Dev</div>
@@ -32,56 +32,135 @@
 
     <!-- ==================== LAYER 3: THE MAIN CONTENT ==================== -->
     <main> <!-- This tells search engines: The most important unique information lives inside here. -->
-        <section> <!-- This creates an organized chapter or thematic section box inside my main space. -->
-            <h2>Task 3.1: CSS Setup & Basic Styling</h2> <!-- Medium-sized sub-header. Slightly smaller than my h1 title. -->
-            <p>I am typing this code line by line to master web design.</p> <!-- Another reading paragraph block. -->
-                <!-- Week 2: The 5 Daily Challenges Section -->
-            <section id="daily-challenges">
-            <h2>Week 2: Daily CSS Challenges Portfolio</h2>
 
-            <!-- Challenge 1: Hover Effects and Interactive Color Transitions -->
-            <article id="challenge-1">
-                <h3>Daily Challenge 1: Hover Effects</h3>
-                <p>Interactive web components must change properties when targeted by cursor actions:</p>
-                <button class="hover-btn">Interactive Action Button</button>
+        <!-- HERO SECTION WITH PROFILE PICTURE & TITLE -->
+        <section class="spacing-card hero-card" style="display: flex; align-items: center; gap: 25px; flex-wrap: wrap;">
+            <img src="images/hellen_njue_profile.png" alt="Hellen Wamucii Njue" class="profile-card-img" style="width: 280px; height: auto; border-radius: 4px; border: none; flex-shrink: 0;">
+            <div class="hero-text" style="flex: 1; min-width: 280px;">
+                <h1 style="margin: 0 0 10px 0; font-size: 1.8rem;">Hellen.Dev — Web Development & Design Portfolio</h1>
+                <p style="margin: 0; color: #555; line-height: 1.5;">Showcasing semantic HTML, custom layout architectures, and interactive CSS modules.</p>
+                <p style="margin: 8px 0 0 0; font-size: 0.95rem; color: #666;">Bridging data workflows, web applications, and modern responsive design systems.</p>
+            </div>
+        </section>
+
+        <!-- ========================================================== -->
+        <!-- WEEK 2: THE 5 DAILY CHALLENGES PORTFOLIO SECTION -->
+        <!-- ========================================================== -->
+        <section id="daily-challenges" style="margin-top: 40px; border-top: 3px solid var(--accent-color, #333); padding-top: 30px;">
+            <h2>Week 2: Daily CSS Challenges Portfolio</h2>
+            <p>Integrating my foundational Week 1 HTML milestones directly into my Week 2 CSS design system.</p>
+
+            <!-- ==================== DAILY CHALLENGE 1 ==================== -->
+            <article id="challenge-1" class="border-card" style="margin-top: 30px; border: 2px dashed #444; padding: 25px; border-radius: 8px;">
+                <h3>Daily Challenge 1: Semantic HTML & Hover Effects</h3>
+                <p>My core focus right now is tracking workflows at <abbr title="Ipsos Kenya Operations">Ipsos</abbr>.</p>
+                
+                <blockquote>
+                    "Why are we doing this manually when we could make the computer do it?"
+                </blockquote>
+                
+                <p>I co-founded <cite>Nitas Fashion</cite> around the year <time datetime="2019">2019</time>.</p>
+                <p>We are using the <mark>Git Bash</mark> console terminal tunnels to route code updates.</p>
+                
+                <details style="margin-top: 15px;">
+                    <summary>Click to view my project stack summary</summary>
+                    <p style="margin-top: 8px;">I am building out a Nitas POS system, Leave Days Tracker, and WorkTap application layout.</p>
+                </details>
+
+                <div style="margin-top: 20px;">
+                    <p>Interactive web components must change properties when targeted by cursor actions:</p>
+                    <button class="hover-btn" style="margin-top: 10px;">Interactive Action Button</button>
+                </div>
             </article>
 
-            <!-- Challenge 2: Mastering Margins & Padding Boundaries -->
-            <article id="challenge-2">
+            <!-- ==================== DAILY CHALLENGE 2 ==================== -->
+            <article id="challenge-2" class="border-card" style="margin-top: 40px; border: 2px dashed #444; padding: 25px; border-radius: 8px;">
                 <h3>Daily Challenge 2: Margin vs Padding Blocks</h3>
-                <div class="spacing-card">
+                
+                <div class="spacing-card" style="margin-top: 15px;">
+                    <h4>👗 Nitas Fashion POS v1.0 Dashboard</h4>
+                    <p>Select an option from the navigation list below to manage active salon registers or log digital wholesale garment packages.</p>
+                    <ul class="nav-links" style="margin-top: 15px; display: flex; gap: 15px; list-style: none; padding: 0;">
+                        <li><a href="#sales" style="color: var(--accent-color);">New Transaction</a></li>
+                        <li><a href="#inventory" style="color: var(--accent-color);">Inventory</a></li>
+                        <li><a href="#analytics" style="color: var(--accent-color);">Reports</a></li>
+                    </ul>
+                </div>
+
+                <div class="spacing-card" style="margin-top: 20px;">
                     <p>This layout container card possesses structural internal padding buffers alongside explicit external block margins.</p>
                 </div>
             </article>
 
-            <!-- Challenge 3: Absolute vs Relative Sizing (px vs rem) -->
-            <article id="challenge-3">
+            <!-- ==================== DAILY CHALLENGE 3 ==================== -->
+            <article id="challenge-3" class="border-card" style="margin-top: 40px; border: 2px dashed #444; padding: 25px; border-radius: 8px;">
                 <h3>Daily Challenge 3: Absolute vs Relative Units</h3>
-                <div class="px-box">Absolute Sizing (Fixed 200px)</div>
-                <div class="rem-box">Relative Sizing (Scalable rem Units)</div>
+                <p>Understanding the difference between fixed and scalable units is crucial for responsive design.</p>
+                
+                <address style="margin-top: 15px; font-style: normal; line-height: 1.6;">
+                    <strong>LeaveDesk Admin Support</strong><br>
+                    IYF Hub Office, Block C | Nairobi, Kenya<br>
+                    Phone: <a href="tel:+254702020610" style="color: var(--accent-color);">0702020610</a> | 
+                    Email: <a href="mailto:support@leavedesk.co.ke" style="color: var(--accent-color);">support@leavedesk.co.ke</a>
+                </address>
+
+                <div class="px-box" style="margin-top: 20px;">Absolute Sizing (Fixed 200px)</div>
+                <p style="margin-top: 8px;">This box has a fixed width of 200 pixels. No matter how a user zooms in or changes browser settings, it stays exactly 200px wide.</p>
+                
+                <div class="rem-box" style="margin-top: 20px;">Relative Sizing (Scalable rem Units)</div>
+                <p style="margin-top: 8px;">This box uses relative units that scale based on root font size for improved accessibility across devices.</p>
             </article>
 
-            <!-- Challenge 4: Decorative Layout Borders & Dividers -->
-            <article id="challenge-4">
-                <h3>Daily Challenge 4: Stylized Structural Borders</h3>
-                <div class="border-card">
-                    <p>Applying custom thick frame accents and soft border radiuses to isolate content modules clearly.</p>
+            <!-- ==================== DAILY CHALLENGE 4: EXPANDED GRID ==================== -->
+<article id="challenge-4" class="border-card" style="margin-top: 40px; border: 2px dashed #444; padding: 25px; border-radius: 8px;">
+    <h3>Daily Challenge 4: Stylized Structural Borders</h3>
+    <p>A semantic grid structure tracking warehouse apparel, Ankara fashion collections, and salon inventory.</p>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 20px;">
+        <!-- Card 1: Fancy Dresses -->
+        <figure class="border-card" style="padding: 10px; margin: 0;">
+            <img src="images/nitas-fancy-dresses.jpg" alt="Fancy Dresses on display shelves" style="width: 100%; border-radius: 4px;">
+            <figcaption style="font-size: 0.85rem; margin-top: 8px;">Stock ID: DRS-015 - Fancy Dresses</figcaption>
+        </figure>
+
+        <!-- Card 2: Ankara Fashion -->
+        <figure class="border-card" style="padding: 10px; margin: 0;">
+            <img src="images/nitas-ankara.png" alt="Vibrant Nitas Ankara Fashion Collection" style="width: 100%; border-radius: 4px;">
+            <figcaption style="font-size: 0.85rem; margin-top: 8px;">Stock ID: ANK-042 - Ankara Collection</figcaption>
+        </figure>
+
+        <!-- Card 3: Footwear -->
+        <figure class="border-card" style="padding: 10px; margin: 0;">
+            <img src="images/nitas-footwear.jpeg" alt="Trending Footwear Selection" style="width: 100%; border-radius: 4px;">
+            <figcaption style="font-size: 0.85rem; margin-top: 8px;">Stock ID: SH-089 - Footwear</figcaption>
+        </figure>
+
+        <!-- Card 4: Hairstyle / Salon Inventory -->
+        <figure class="border-card" style="padding: 10px; margin: 0;">
+            <img src="images/nitas-hairstyle.jpeg" alt="Trending Braids and Hairstyles" style="width: 100%; border-radius: 4px;">
+            <figcaption style="font-size: 0.85rem; margin-top: 8px;">Stock ID: HAIR-102 - Salon Styling</figcaption>
+        </figure>
+    </div>
+</article>
+
+            <!-- ==================== DAILY CHALLENGE 5 ==================== -->
+            <article id="challenge-5" class="border-card" style="margin-top: 40px; border: 2px dashed #444; padding: 25px; border-radius: 8px;">
+                <h3>Daily Challenge 5: Core Layout Resets & Automation</h3>
+                <p>Our universal asterisk reset ensures that default browser list margins are cleared out cleanly before presentation rule adjustments apply.</p>
+                
+                <div class="spacing-card" style="margin-top: 20px;">
+                    <h4>Automating EDWatch Workflows: Custom Tampermonkey Engine</h4>
+                    <p style="margin-top: 8px;">Using custom userscripting to eliminate manual input friction and data-entry drift in media monitoring data pipelines.</p>
                 </div>
             </article>
 
-            <!-- Challenge 5: Basic CSS Reset Properties Implementation -->
-            <article id="challenge-5">
-                <h3>Daily Challenge 5: Core Layout Resets</h3>
-                <p>Our universal asterisk reset ensures that default browser list margins are cleared out cleanly before presentation rule adjustments apply.</p>
-            </article>
-
-        </section> <!-- Closes down my organized chapter box. -->
-    </main> <!-- Closes down my main unique content room. -->
+        </section>
+    </main>
 
     <!-- ==================== LAYER 4: THE BASE FOOTER ==================== -->
-    <footer> <!-- This creates a clean metadata strip at the absolute bottom of the screen. -->
-        <p>&copy; 2026 Hellen Wamucii Njue.</p> <!-- The &copy; code automatically creates a clean copyright circle symbol (©). -->
-    </footer> <!-- Closes down my bottom baseline strip. -->
+    <footer style="margin-top: 50px; padding: 20px 0; text-align: center; border-top: 1px solid #ddd;">
+        <p>&copy; 2026 Hellen Wamucii Njue.</p>
+    </footer>
 
-</body> <!-- Locks the main visible content doors of the webpage. -->
-</html> <!-- The absolute final anchor that tells the computer: That's all folks! The entire document is finished. -->
+</body>
+</html>

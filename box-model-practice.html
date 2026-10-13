@@ -8,6 +8,20 @@
 </head>
 <body> <!-- Starting the visible part of my web page. -->
 
+    <header>
+    <!-- Task 4.1: Unified Flexbox Navigation Menu -->
+    <nav class="nav-container">
+        <div class="logo">Hellen.Dev</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="box-model-practice.html">Box Model Practice</a></li>
+        </ul>
+    </nav>
+</header>
+
 <header> <!-- Welcome header tray box. -->
         <h1>Task 3.2: Box Model Practice Dashboard</h1> <!-- Main headline title. -->
         <p>Mastering Content, Padding, Borders, and Margins layout spacing rules.</p> <!-- Reading block text. -->
@@ -16,13 +30,23 @@
     <main> <!-- Main unique content room wrapper. -->
         <!-- We will put our Exercise 1, 2, and 3 practice blocks in here next! -->
                  <!-- Exercise 1: Box Model Visualization Elements -->
-        <section class="box-section">
-            <h2>Exercise 1: The Four Box Layout</h2>
-            
-            <div class="box content-box">Content Area Box</div>
-            <div class="box padding-box">Padding Cushion Box</div>
-            <div class="box border-box">Visible Frame Border Box</div>
-            <div class="box margin-box">External Air Gap Margin Box</div>
+        <!-- Exercise 1.1: Visual Nested Box Model Diagram -->
+        <section class="element-section">
+            <h2>Visualizing the Box Model (Nested Layers)</h2>
+            <p>This concentric box layout demonstrates how Margins, Borders, Padding, and Content layer together like nested squares:</p>
+
+            <div class="nested-margin-box">
+                <span class="box-label">Margin Area (Outer Spacing)</span>
+                <div class="nested-border-box">
+                    <span class="box-label">Border Area (Frame)</span>
+                    <div class="nested-padding-box">
+                        <span class="box-label">Padding Area (Inner Cushion)</span>
+                        <div class="nested-content-box">
+                            Content Area (Text Core)
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
                 <!-- Exercise 2: Inline vs Block Elements Layout -->
