@@ -6,17 +6,35 @@
     box-sizing: border-box; /* Crucial anchor! Tells the box to include padding and borders inside its total width. */
 }
 
+/* ==================== CSS DESIGN SYSTEM VARIABLES ==================== */
+:root {
+    --bg-primary: #fdf6f0;       /* Soft warm background tone */
+    --text-primary: #333333;     /* Soft charcoal grey text */
+    --heading-color: #111111;    /* Deep dark tint for headings */
+    --accent-color: #3b5bdb;     /* Primary professional blue */
+    --accent-hover: #2b45b2;     /* Darker blue for hover states */
+    --nav-bg: #222222;           /* Sleek dark charcoal navbar */
+    --font-main: "Georgia", serif;
+}
+
 /* 🌟 REMEMBER: Leave a blank line between rules to let your eyes rest! */
 
 /* ==================== RULE 2: THE MAIN DOCUMENT BODY ==================== */
 /* This targets the <body> container to set global default layouts for the whole screen. */
 body {
-    font-family: "Georgia", serif; /* Changes text to a classic, clear reading style with little feet. */
+    font-family: var(--font-main); /* Changes text to a classic, clear reading style with little feet. */
     font-size: 16px;              /* Sets the standard size for all normal paragraph reading text. */
     line-height: 1.6;             /* Adds a comfortable breathing gap between text lines so it is easy to read. */
-    color: #333333;               /* Sets the text to soft charcoal grey instead of harsh solid black. */
-    background-color: #ec8f6d34;  /* Changes background from blinding white to a soft, custom warm tone. */
+    color: var(--text-primary);   /* Sets the text to soft charcoal grey instead of harsh solid black. */
+    background-color: var(--bg-primary); /* Changes background to a soft, custom warm tone. */
     padding: 20px;                /* Creates a beautiful cushion space inside all four outer screen glass edges. */
+} /* 🌟 Don't forget this closing bracket for the body block! */
+
+/* Accessibility: Never remove focus outlines! */
+a:focus,
+button:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 4px;
 }
 
 /* ==================== RULE 3: HEADING SCALE DISTINCTIONS ==================== */
@@ -26,7 +44,7 @@ h1 {
     font-size: 2.25rem;    /* Sets the height to 36px (2.25 times larger than our base body font). */
     font-weight: 700;       /* Makes the letters thick and bold so they pop out. */
     margin-bottom: 15px;    /* Pushes content directly below it down to leave a 15px air gap. */
-    color: #111111;         /* Deep dark tint for maximum emphasis. */
+    color: var(--heading-color); 
 }
 
 /* Sizing for medium-sized secondary subtitles. */
@@ -35,7 +53,7 @@ h2 {
     font-weight: 600;       /* Semi-bold weighting for neat emphasis. */
     margin-top: 25px;       /* Grabs a 25px air gap ABOVE itself to separate from prior blocks. */
     margin-bottom: 12px;    /* Pushes items below it down by 12px. */
-    color: #222222;         /* Solid charcoal text color. */
+    color: var(--heading-color);
 }
 
 /* Sizing for smaller subheadings inside chapters. */
@@ -44,7 +62,7 @@ h3 {
     font-weight: 500;       /* Clean medium thickness text style. */
     margin-top: 20px;       /* Grabs a 20px air gap ABOVE itself. */
     margin-bottom: 10px;    /* Pushes items below it down by 10px. */
-    color: #444444;         /* Soft grey-toned emphasis. */
+    color: var(--text-primary);         /* Soft grey-toned emphasis. */
 }
 
 /* Layout spacing rules for standard paragraph reading sentences. */
@@ -233,4 +251,36 @@ p {
     border: 4px dashed #ff922b;   /* 🌟 Custom thick DASHED border style accent layout framing! */
     padding: 15px;
     border-radius: 12px;          /* Extra rounded corners for a neat card look. */
+}
+
+/* ==================== PROJECTS PAGE CSS GRID ==================== */
+
+/* 1. Mobile-First Default: 1 Column on phones */
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 20px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* 2. Tablet View: 2 Columns (min-width: 768px) */
+@media (min-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 3. Desktop View: 3 Columns (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
