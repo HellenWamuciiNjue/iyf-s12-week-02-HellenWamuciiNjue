@@ -10,6 +10,13 @@ Building directly upon the clean, accessible semantic HTML foundation establishe
 
 🔗 **[View the Week 2 Live Portfolio](https://hellenwamuciinjue.github.io/iyf-s12-week-02-HellenWamuciiNjue/)**
 
+### 🌐 Quick Page Navigation
+* [🏠 Home Page](https://hellenwamuciinjue.github.io/iyf-s12-week-02-HellenWamuciiNjue/index.html)
+* [👤 About Me](https://hellenwamuciinjue.github.io/iyf-s12-week-02-HellenWamuciiNjue/about.html)
+* [📂 Projects Showcase](https://hellenwamuciinjue.github.io/iyf-s12-week-02-HellenWamuciiNjue/projects.html)
+* [📞 Contact Form](https://hellenwamuciinjue.github.io/iyf-s12-week-02-HellenWamuciiNjue/contact.html)
+* [📦 Box Model Practice Sandbox](https://hellenwamuciinjue.github.io/iyf-s12-week-02-HellenWamuciiNjue/box-model-practice.html)
+
 ---
 
 ## 📋 Table of Contents
@@ -91,3 +98,59 @@ iyf-s12-week-02-HellenWamuciiNjue/
 ├── projects.html
 ├── styles.css
 └── README.md
+
+## 🎨 CSS Architecture & Design Token System
+
+The repository utilizes clean, maintenance-friendly CSS custom properties (variables) defined in the `:root` pseudo-class:
+
+```css
+/* Core Reset & Design Tokens */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #0d1b2a;
+    --accent-color: #0056b3;
+    --background-light: #f8f9fa;
+    --text-dark: #1f2937;
+    --font-heading: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-body: system-ui, -apple-system, sans-serif;
+}
+
+## ♿ Accessibility & Focus Management
+
+Adhering strictly to WCAG principles and the course rubric:
+- **Focus Outlines Intact:** Universal focus rules ensure keyboard users (`Tab` navigation) always have visible indicator rings.
+- **Color Contrast:** All text and background variable pairings meet or exceed AA standards for readability.
+- **Active Page Indicators:** Uses semantic `aria-current="page"` attributes to assist assistive technology users during route transitions.
+
+---
+
+## 🛠️ Daily Engineering Challenges
+
+The `daily-challenges/` directory documents targeted daily practical exercises covering core CSS layout techniques:
+- **Day 1:** Visualizing the Box Model through concentric margin/border/padding layers.
+- **Day 2:** Exploring block vs. inline element constraints and element spacing behaviors.
+- **Day 3:** Building custom Flexbox layouts and alignment structures.
+- **Day 4:** Constructing responsive CSS Grid gallery structures.
+- **Day 5:** Applying CSS variables and accessibility focus state management across dynamic viewports.
+
+---
+
+## 📝 Lessons Learned
+
+1. **Mobile-First Mental Shift:** Designing base CSS rules for mobile devices first prevents complex CSS media query overrides later in the development process.
+2. **Flexbox vs. CSS Grid Separation of Concerns:** Flexbox excels at 1-dimensional component alignment (e.g., navigation bars, form control rows), while CSS Grid handles 2-dimensional page layouts (e.g., card galleries).
+3. **The Power of `border-box`:** Setting `box-sizing: border-box` across all elements makes element sizing predictable by absorbing padding and border width into the overall element dimensions.
+
+---
+
+## 👩‍💻 Author & Contact
+
+**Hellen Wamucii Njue**  
+*Media Analyst & Full-Stack Web Development Student*  
+- IYF Weekend Academy — Season 12  
+- **GitHub:** [@HellenWamuciiNjue](https://github.com/HellenWamuciiNjue)
