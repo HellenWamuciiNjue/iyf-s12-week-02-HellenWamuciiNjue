@@ -27,9 +27,10 @@ Building directly upon the clean, accessible semantic HTML foundation establishe
 * [Project Directory Structure](#-project-directory-structure)
 * [CSS Architecture & Design Token System](#-css-architecture--design-token-system)
 * [Accessibility & Focus Management](#-accessibility--focus-management)
-* [Daily Engineering Challenges](#-daily-engineering-challenges)
+* [Daily Engineering Challenges](#daily-engineering-challenges)
 * [Lessons Learned](#-lessons-learned)
-* [Author & Contact](#-author--contact)
+* [Author & Contact](#author-and-contact)
+
 ---
 
 ## 🔄 Architectural Evolution: Week 1 vs. Week 2
@@ -129,7 +130,7 @@ Adhering strictly to WCAG principles and the course rubric:
 
 ---
 
-## 🛠️ Daily Engineering Challenges
+<h2 id="daily-engineering-challenges">🛠️ Daily Engineering Challenges</h2>
 
 The `daily-challenges/` directory documents targeted daily practical exercises covering core CSS layout techniques:
 - **Day 1:** Visualizing the Box Model through concentric margin/border/padding layers.
@@ -148,7 +149,7 @@ The `daily-challenges/` directory documents targeted daily practical exercises c
 
 ---
 
-## 👩‍💻 Author & Contact
+<h2 id="author-and-contact">👩‍💻 Author & Contact</h2>
 
 **Hellen Wamucii Njue**  
 *Media Analyst & Full-Stack Web Development Student*  
