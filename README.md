@@ -1,6 +1,6 @@
 # 🎨 Week 2: CSS Fundamentals, Box Model Mastery & Responsive Layouts
 
-Welcome to **Week 2** of the Web Development Program at IYF Weekend Academy (Season 12). 
+Welcome to my **Week 2** of the Web Development Program at IYF Weekend Academy (Season 12). 
 
 Building directly upon the clean, accessible semantic HTML foundation established in [Week 1](https://github.com/HellenWamuciiNjue/iyf-s12-week-01-HellenWamuciiNjue), this repository introduces modern CSS styling, mobile-first design systems, Flexbox navigation, and 3-tier CSS Grid layout systems.
 
