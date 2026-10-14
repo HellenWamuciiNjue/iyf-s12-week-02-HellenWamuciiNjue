@@ -30,7 +30,6 @@ Building directly upon the clean, accessible semantic HTML foundation establishe
 * [Daily Engineering Challenges](#-daily-engineering-challenges)
 * [Lessons Learned](#-lessons-learned)
 * [Author & Contact](#-author--contact)
-
 ---
 
 ## 🔄 Architectural Evolution: Week 1 vs. Week 2
@@ -99,11 +98,12 @@ iyf-s12-week-02-HellenWamuciiNjue/
 ├── styles.css
 └── README.md
 
+```
+
 ## 🎨 CSS Architecture & Design Token System
 
 The repository utilizes clean, maintenance-friendly CSS custom properties (variables) defined in the `:root` pseudo-class:
 
-```css
 /* Core Reset & Design Tokens */
 *, *::before, *::after {
     box-sizing: border-box;
